@@ -4,69 +4,150 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
 
-    <Style>
-        body{
+    <style>
+        body {
             background-color: #b9ad91;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+    
         .navbar-nav .nav-link {
-        color: #333;
-        font-weight: 500;
-        margin: 0 1rem;
-        transition: color 0.3s ease;
+            color: #333;
+            font-weight: 500;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
         }
-
+    
         .navbar-nav .nav-link:hover,
         .navbar-nav .nav-link.active {
-        color: rgb(109, 33, 5); 
-        font-size: medium;
+            color: rgb(109, 33, 5);
+            font-size: medium;
         }
-
+    
         .form-control {
-        border-radius: 20px;
-        padding: 0.4rem 1rem;
-        border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 0.4rem 1rem;
+            border: 1px solid #ccc;
         }
-        .col1{
+    
+        .col1 {
             margin-top: 2rem;
             margin-bottom: 3rem;
             background-image: url(1.png);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position-y: bottom  ;
+            background-position-y: bottom;
             height: 18rem;
         }
-        .details{
+    
+        .details {
             margin-bottom: 3rem;
             color: rgb(243, 224, 199);
         }
-       .card {
-        background-color: #806453;
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-       }
-       
-
+    
+        .card {
+            background-color: #806453;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
         .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-
-
+    
         .btn-primary {
-        background-color: #86ac8e;
-        border: none;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+            background-color: #86ac8e;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
-
+    
         .btn-primary:hover {
-        background-color: #6c9477;
-        transform: scale(1.05);
-        color: #fff;
+            background-color: #6c9477;
+            transform: scale(1.05);
+            color: #fff;
         }
-    </Style>
+    
+        /* Tablet & smaller desktop */
+        @media (max-width: 992px) {
+            ul.navbar-nav {
+                margin-left: 0 !important;
+                justify-content: center;
+                width: 100%;
+            }
+    
+            .col1 h1 {
+                font-size: 1.5rem !important;
+                margin-left: 0 !important;
+            }
+    
+            .col1 {
+                height: auto;
+                padding: 2rem 1rem;
+                background-position: center;
+            }
+    
+            .details {
+                padding: 1rem;
+                font-size: 1rem;
+                text-align: center;
+            }
+    
+            .card {
+                margin-bottom: 2rem;
+            }
+    
+            .row.align-items-start .col {
+                margin-left: 0 !important;
+            }
+    
+            article {
+                height: auto !important;
+                padding-bottom: 3rem;
+            }
+        }
+    
+        /* Mobile */
+        @media (max-width: 768px) {
+            .container.text-center > .row {
+                flex-direction: column;
+                align-items: center !important;
+            }
+    
+            .card {
+                width: 90% !important;
+                height: auto !important;
+            }
+    
+            .col-md-6.d-flex {
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center;
+            }
+    
+            .col-md-6.d-flex img {
+                margin: 1rem auto !important;
+            }
+    
+            .container.mt-4 {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+    
+            .col h1,
+            .col p {
+                text-align: center !important;
+            }
+    
+            .container > p {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+        }
+    </style>
+    
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
